@@ -1,0 +1,42 @@
+#sample {
+    /* block요소 하위 텍스트 정렬 */
+    text-align: center;
+    text-decoration: underline 2px red wavy; /* line-through | overline | underline */
+    text-shadow: 3px 3px 7px grey; /* x-offset y-offset spread color */
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.bg {
+    background-color: black;
+}
+.shadow {
+    font-weight: bold;
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+#shadow1 {
+    color: orangered;
+    text-shadow: 5px 5px 0 orange;
+}
+#shadow2 {
+    color: aliceblue;
+    text-shadow: 0 1px 20px #fff;
+}
+#shadow3 {
+    text-shadow: 1px 1px 20px #6f0;
+}
+#shadow4 {
+    color: black;
+    text-shadow: 
+    0 0 4px #ccc,
+    0 -5px 4px #ff3,
+    2px -10px 6px #fd3,
+    -2px -15px 11px #f80,
+    2px -19px 18px #f20;
+}

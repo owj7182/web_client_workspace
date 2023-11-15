@@ -1,0 +1,34 @@
+.parent {
+    background-color: bisque;
+    text-align: right;
+}
+.parent span {
+    border-color: blueviolet;
+    
+}
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000; /* #rrggbb 같은색의 값이 같으면 #rgb로 줄여쓰기 가능 */
+    /* center 위 아래 좌우 */
+    margin: 0 auto; 
+    /* right */
+    /* margin-left: auto; */
+    /* left */
+    /* margin-right: auto; */
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    border: 2px solid #000;
+    margin: 0 auto; /* 박스를 가운데 */
+    /* 텍스트를 가운데 */
+    /* text-align: center; */
+
+    /* 가운데(상하좌우) 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

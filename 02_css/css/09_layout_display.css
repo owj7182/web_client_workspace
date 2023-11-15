@@ -1,0 +1,18 @@
+.block {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.color1 { background-color: cyan;}
+.color2 { background-color: blanchedalmond;}
+.color3 { background-color: cornflowerblue;}
+.color4 { background-color: darkolivegreen;}
+.color5 { background-color: goldenrod;}
+
+.d-inline { display: inline; }
+.d-block { display: block;}
+.d-inline-block { display: inline-block;}
+
+.d-none {display: none;}
+.v-hidden { visibility: hidden;}
+.opacity-0 {opacity: 0;}

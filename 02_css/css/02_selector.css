@@ -1,0 +1,137 @@
+/* 태그선택자 */
+/* li {
+    background-color: blanchedalmond;
+}
+
+ul {
+    background-color: aqua;
+} */
+/* 아이디 선택자 */
+/* #foo1 {
+    font-weight: bold;
+} */
+/* 클래스 선택자 */
+/* .group1 {
+    color: blue;
+}
+.group2 {
+    color: hotpink;
+}
+.group1.group2 {
+    color: dimgrey;
+} */
+/* 속성 선택자 */
+/* [title] {
+    cursor: pointer;;
+}
+[title=안녕2] {
+    text-decoration: underline;
+} */
+/* 혼용 */
+/* li#foo3 {
+    background-color: darkkhaki;
+} */
+/* 복수개 */
+/* #foo4, #foo5 {
+    color: greenyellow;
+} */
+
+/* 자식 선택자 */
+/* #parent > h4 {
+    color: rgb(56, 195, 195);
+} */
+/* 후손 선택자 */
+/* #parent h4 {
+    color: darkkhaki;
+}
+#parent > ul li {
+    color: rgb(57, 123, 189);
+} */
+/* #parent > div > ul li {
+    color: chocolate;
+} */
+/* #parent #child > ul > li {
+    color: rgb(45, 17, 231);
+} */
+
+/* 형제 선택자 */
+/* 다음 형제요소 하나 */
+#p1 + p {
+    color: darkcyan;
+}
+/* 다음 형제요소 모두 */
+/* #p1 ~ p {
+    text-decoration: underline;
+} */ 
+/* 모든 요소 선택자 *
+#p1 ~ * {
+    text-decoration: underline;
+}
+
+
+/* 가상클래스 선택자 */
+/* - 특정 상황에 작동하는 선택자 */
+#bar1:active {
+    background-color: gray;
+    color: rgb(216, 248, 248);
+}
+#bar2:hover {
+    background-color: antiquewhite;
+    color: deepskyblue;
+}
+
+/* 위치관련 가상클래스 선택자 */
+/* child계열(위치) */
+/* #season-wrapper :first-child {
+    color: springgreen;
+} */
+/* #season-wrapper > :first-child {
+    color: springgreen;
+} */
+/* #season-wrapper p:first-child {
+    color: springgreen;
+} */
+/* #season-wrapper :last-child {
+    color: springgreen;
+} */
+/* #season-wrapper :nth-child(3) {
+    color: springgreen;
+} */
+/* 짝수번째 */
+/* #season-wrapper :nth-child(2n) {
+    color: springgreen;
+} */
+/* 홀수번째 */
+/* #season-wrapper :nth-child(2n + 1) {
+    color: springgreen;
+} */
+
+/* of-type계열(타입별 위치) */
+/* #season-wrapper p:first-of-type {
+    color: springgreen;
+} */
+#season-wrapper p:last-of-type {
+    color: springgreen;
+}
+
+
+/* 부정선택자 */
+#client-langs li:not(#css3) {
+    color: aqua;
+}
+
+/* 루트 선택자 */
+:root {
+    background-color: bisque;
+}
+
+
+/* 가상요소 선택자 */
+/* ::before 시작태그와 내용사이 */
+#price-list li::before {
+    content: '￦';
+}
+/* ::after 종료태그와 내용사이 */
+#price-list li::after {
+    content: '🍕';
+}

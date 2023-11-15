@@ -1,0 +1,22 @@
+.item {
+    width: 300px;
+    height: 300px;
+    background-color: chartreuse;
+    border: 5px solid #000;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; 
+    padding-left: 10px;*/
+    /* top right bottom left*/
+    /* 생략된 자리는 맞은편 값을 적용한다 */
+    /* padding: 10px 10px 10px 10px; */
+    /* padding: 10px 20px */
+    padding: 10px;
+    margin: 40px;
+}
+.item span {
+    width: 100px; /* inlin 요소 적용안됨 */
+    height: 100px; /* inlin 요소 적용안됨 */
+    padding: 100px;
+    margin: 50px 30px; /* inlin 요소 적용안됨 */
+}
