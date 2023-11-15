@@ -9,10 +9,10 @@
     <h1>Form</h1>
     <!-- 사용자 입력값을 서버로 전송하기 위한 form과 input태그 등을 제공 -->
     <!--
-        name 폼의 이름
+        name 폼의 이름(서버전송되지 않음. 페이지내 구분용)
         action 제출할 서버주소 (url)
         method (http메세지를 작성하는 방법)
-            - get (기본값) : 사용자 입력값을 url에 query-string 형식으로 전달
+            - get (기본값) : 사용자 입력값을 url에 query-string 형식(직렬화)으로 전달
             - post : 사용자 입력값을 http메세지 바디에 작성(url 확인 불가)
         
         ** query-string작성시 key=value형식에 사용되는 key값은 name속성값이다. ** 
@@ -42,6 +42,7 @@
                 name="memberName" 
                 value="홍길동"
                 placeholder="이름을 입력하세요..."
+                readonly
                 required>
             <br>
 
@@ -71,6 +72,13 @@
             <label for="memberTel">전화번호</label>
             <input type="tel" name="memberTel" id="memberTel">
             <br>
+
+            <label for="memo">메모</label>
+            <textarea name="memo" id="memo" cols="10" rows="5">a
+b
+c
+d            </textarea>
+
 
         </fieldset>
 
