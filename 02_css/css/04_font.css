@@ -18,6 +18,7 @@
 #font2 {
     font-family: 'Dongle', sans-serif;
     font-size: 48px; /* 폰트 크기 */
+    /* 300(light) 400(regular) 700(bold) */
     font-weight: 700; /* 폰트 굵기 */
     font-style: italic; /* 폰트 기울기 */
     line-height: 24px; /* 보통 폰트 사이즈랑 일치해서 사용 */

@@ -1,0 +1,69 @@
+.outer {
+    background-color: gray;
+    border: 1px solid black;
+}
+.first {
+    width: 300px;
+    height: 300px;
+    background-color: blanchedalmond;
+}
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    top: 50px; /* offset 위로부터 50px 떨어뜨리기 */
+    left: 50px;/* offset 좌로부터 50px 떨어뜨리기 */
+}
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: magenta;
+    top: 100px;
+    left: 100px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 50px;
+}
+
+.p-relative { position: relative; }
+.p-absolute { position: absolute; }
+.p-fixed { position: fixed; }
+.p-sticky { 
+    position: sticky; 
+    top: 0px;
+    background-color: cadetblue;
+    z-index: 999; /* 값이 클수록 앞(사용자)에 위치 */
+}
+.wrap {
+    height: 80px;
+    margin: 30px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+}
+.box1 {
+    background-color: chocolate;
+}
+.box2 {
+    background-color: darkslategray;
+    top: 20px;
+    left: 20px;
+}
+.box3 {
+    background-color: dodgerblue;
+    top: 40px;
+    left: 40px;
+}
+.z-10 { z-index: 10;}
+.z-20 { z-index: 20;}
+.z-30 { z-index: 30;}
