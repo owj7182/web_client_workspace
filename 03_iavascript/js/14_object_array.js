@@ -60,7 +60,8 @@ function Pet(name, breed, weight, age, ...colors) {
     this.weight = weight;
     this.age = age;
     this.colors = colors;
-    this.bark = function(){
+    this.bark = () => {
+        // 자기 this가 없어 부모의 this(생성자함수의 this(현재객체))를 가져다 쓴다.
         return this.weight < 10 ? "뿌요뿌요" : "워워";
     };
 }

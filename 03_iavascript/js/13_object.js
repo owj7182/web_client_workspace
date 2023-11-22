@@ -35,8 +35,8 @@ const test1 = () => {
     console.log(obj.hobby);
     console.log(obj.hobby[0]);
     console.log(obj.pet.name);
-    // console.log(obj.123);
-    // console.log(obj.user-name);
+    // console.log(obj.123); // 사용불가
+    // console.log(obj.user-name); // 사용불가
 
     // 2. bracket-motation
     // 문자열로 속성명 작성!!
@@ -79,6 +79,11 @@ const test2 = () => {
         // 메소드 단축문법 (객체 밖에서는 사용불가)
         eat(food) {
             console.log(`${this.username}이/가 ${food}를 먹는다.`);
+        },
+        work: () => {
+            // 객체안 화살표함수는 지양할 것.
+            console.log(this); // window
+            console.log(`${this.username}이/가 일한다~ `);
         }
     };
 
@@ -88,6 +93,8 @@ const test2 = () => {
     
     user['run']();
     user['eat']('🍱');
+
+    user.work();
 };
 
 /**
