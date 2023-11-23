@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Event</title>
+    <style>
+        .bubble {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 5px 0;
+        }
+        .bubble1 {background-color: darkslategrey;}
+        .bubble2 {background-color: blanchedalmond;}
+        .bubble3 {background-color: dodgerblue;}
+    </style>
+</head>
+<body>
+    <h1>Event</h1>
+    <!-- 
+        웹 페이지상의 모든 사용자 액션, 네트워크상의 처리 등 모든것을 이벤트 형태로 관리한다.
+        이벤트 발생시, 이벤트 객체를 생성, 이벤트 핸들러 함수를 호출하는 방식.
+     -->
+     <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">HTML Event Attributes</a>
+     <div>
+        <button id="btn1" onclick="test1(event);">inline - event속성</button>
+        <button id="btn2">event속성</button>
+        <button id="btn3">addEventListener</button>
+     </div>
+     <button id="btn4">Event객체</button>
+
+     <fieldset>
+        <legend>input관련</legend>
+        <input type="text" id="nickname" placeholder="닉네임을 입력하세요...">
+        <br>
+        <input type="text" id="memo" placeholder="메모를 입력하세요...">
+     </fieldset>
+
+     <form name="signupFrm" action="javascript:requestSignup();">
+        <fieldset>
+            <legend>회원가입</legend>
+            <div>
+                <label for="username">아이디</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div>
+                <label for="confirm-password">비밀번호 확인</label>
+                <input type="password" id="confirm-password" required>
+            </div>
+            <div>
+                <button>등록</button>
+                <button type="reset">초기화</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div id="bubble1" class="bubble bubble1">
+        <div id="bubble2" class="bubble bubble2">
+            <div id="bubble3" class="bubble bubble3">Event Propagation - Bubbling
+            </div>
+        </div>
+    </div>
+
+    <button id="btn5">Trigger</button>
+    <script src="js/21_event.js"></script>
+</body>
+</html>
