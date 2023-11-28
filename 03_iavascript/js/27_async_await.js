@@ -71,17 +71,32 @@ document.querySelector('#btn5').addEventListener('click', async () => {
 /**
  * avatar 화면 출력, 3초후에 제거
  */
+// document.querySelector('#btn6').addEventListener('click', async () => {
+//     const url = 'https://api.github.com/users/owj7182';
+//     const response = await axios(url);
+//     const {avatar_url} = response.data;
+    
+//     const img = document.createElement('img');
+//     img.src = avatar_url;
+//     img.style.width = '200px';
+
+//     document.querySelector('.img-wrapper').append(img);
+
+//     await new Promise(resolve => setTimeout(resolve, 3000));
+//     img.remove();
+// });
+
 document.querySelector('#btn6').addEventListener('click', async () => {
     const url = 'https://api.github.com/users/owj7182';
-    const response = await axios(url);
-    const {avatar_url} = response.data;
-
-    const img = document.createElement('img');
-    img.src = avatar_url;
-    img.style.width = '200px';
-
-    document.querySelector('.img-wrapper').append(img);
+    const {data : {avatar_url}} = await axios(url);
+    console.log(avatar_url);
     
-    await new Promise(resolve => setTimeout(resolve, 3000));
+    const img = await new Promise((resolve) => {
+        const img = document.createElement('img');
+        img.src = avatar_url;
+        img.style = 'width: 200px; border-radius: 50%';
+        img.onload = () => setTimeout(() => resolve(img), 3000);
+        document.querySelector('.img-wrapper').append(img);
+    });
     img.remove();
 });
