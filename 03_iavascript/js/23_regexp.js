@@ -321,7 +321,7 @@ document.querySelector('#password').addEventListener('blur', (e) => {
     }
 
     alert('✨🎉🎉 유효한 비밀번호입니다. 수고하셨습니다. 🎉🎉✨');
-})
+});
 
 
 

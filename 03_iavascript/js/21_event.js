@@ -85,7 +85,7 @@ document.querySelector('#memo').onkeyup = (e) => {
 const frm = document.signupFrm;
 const username = frm.username;
 const password = frm.password;
-const confirmPassword = frm['confirm-password'];
+const confirmPassword = frm['confirm-password']; 
 
 document.signupFrm.onsubmit = (e) => {
     console.log('submit');
