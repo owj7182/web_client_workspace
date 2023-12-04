@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS | Alignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+</head>
+<body>
+    <h1 class="text-3xl my-4"></h1>
+
+    <!-- inline 요소 정렬 -->
+    <div class="bg-slate-400 text-center">
+        <span class="bg-green-300">가운데</span>
+        <img src="../sample/image/coffee1-7325690f507d48962d312be15d9d8929be4a5ff04d184d5ed0a96c1b27940260.jpg" class="w-40" alt="">
+    </div>
+
+    <!-- flex : justify-content(메인축), align-items(크로스축) -->
+    <div class="my-4 bg-slate-400 flex flex-col items-center">
+        <span class="bg-green-300">가운데</span>
+        <img src="../sample/image/coffee1-7325690f507d48962d312be15d9d8929be4a5ff04d184d5ed0a96c1b27940260.jpg" class="w-40" alt="">
+    </div>
+
+    <!-- block요소 정렬 -->
+    <div class="bg-rose-600 w-40 h-40"></div>
+    <div class="bg-rose-600 w-40 h-40 mx-auto"></div>
+    <div class="bg-rose-600 w-40 h-40 ml-auto"></div>
+</body>
+</html>
